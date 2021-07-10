@@ -17,7 +17,7 @@ namespace EmployeeWebAPI.Controllers
     [ApiController]
     public class EmployeeController : ControllerBase
     {
-        private readonly IConfiguration _configuration; //test
+        private readonly IConfiguration _configuration;
         private readonly IWebHostEnvironment _env;
         public EmployeeController(IConfiguration configuration, IWebHostEnvironment env)
         {
