@@ -17,7 +17,7 @@ namespace EmployeeWebAPI.Controllers
     [ApiController]
     public class EmployeeController : ControllerBase
     {
-        private readonly IConfiguration _configuration;
+        private readonly IConfiguration _configuration; //test
         private readonly IWebHostEnvironment _env;
         public EmployeeController(IConfiguration configuration, IWebHostEnvironment env)
         {
@@ -28,6 +28,7 @@ namespace EmployeeWebAPI.Controllers
         [HttpGet]
         public JsonResult Get()
         {
+            //database table: dbo.Employee
             string query = @"
                             select EmployeeId, EmployeeName, Email, Department, 
                             convert(varchar(10),DateOfJoining,120) as DateOfJoining, PhotoFileName 

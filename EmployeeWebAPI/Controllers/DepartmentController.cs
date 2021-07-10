@@ -24,6 +24,7 @@ namespace EmployeeWebAPI.Controllers
         [HttpGet]
         public JsonResult Get()
         {
+            //database table: dbo.Department
             string query = @"
                             select DepartmentId, DepartmentName from dbo.Department";
             DataTable table = new DataTable();
